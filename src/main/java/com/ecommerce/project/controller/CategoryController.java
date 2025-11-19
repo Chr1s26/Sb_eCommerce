@@ -23,7 +23,7 @@ public class CategoryController {
 //        return new ResponseEntity<>("Echoed Message "+message,HttpStatus.OK);
 //    }
 
-//    @GetMapping("/public/categories")
+    @GetMapping("/public/categories")
     @RequestMapping(value = "/public/categories", method = RequestMethod.GET)
     public ResponseEntity<CategoryResponse> getAllCategories(
             @RequestParam(name = "pageNumber",defaultValue = AppConstants.PAGE_NUMBER,required = false) Integer pageNumber,
